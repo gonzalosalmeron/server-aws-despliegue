@@ -3,8 +3,9 @@ Este es un mini servidor en node.js para usarlo junto a aws-cli en la asignatura
 
 ## :open_book: Pasos a seguir
 1. Instalar nvm e instalar node
+2. Añadir pm2 al proyecto
 
-## :computer: :minidisc: Instalación de nvm
+## :computer: :minidisc: Instalación de nvm y node
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
