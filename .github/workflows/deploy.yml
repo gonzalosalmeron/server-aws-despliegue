@@ -23,3 +23,10 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
         aws-region: us-east-1
+
+    - name: Deploy to EC2
+    - uses: aws/aws-codedeploy-deploy-app-to-instance@v1
+      with:
+        deployment-group: server-group
+        application-name: CodeDeploy-awsbootstrap
+        region: us-east-1
